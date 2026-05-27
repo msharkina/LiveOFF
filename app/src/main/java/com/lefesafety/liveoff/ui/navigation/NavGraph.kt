@@ -10,6 +10,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
+import com.lefesafety.liveoff.ui.screen.home.HomeScreen
 
 @Composable
 fun LiveOffNavGraph(
@@ -21,7 +22,17 @@ fun LiveOffNavGraph(
         startDestination = Screen.Home,
         modifier = modifier
     ) {
-        composable<Screen.Home> { Placeholder("Home") }
+        composable<Screen.Home> {
+            HomeScreen(
+                onNavigateToSos = { navController.navigate(Screen.Sos) },
+                onNavigateToChecklists = { navController.navigate(Screen.ChecklistCategories) },
+                onNavigateToCards = { navController.navigate(Screen.CardCategories) },
+                onNavigateToSearch = { navController.navigate(Screen.Search) },
+                onNavigateToFavorites = { navController.navigate(Screen.Favorites) },
+                onNavigateToMorse = { navController.navigate(Screen.MorseAlphabet) },
+                onNavigateToSettings = { navController.navigate(Screen.Settings) }
+            )
+        }
         composable<Screen.Sos> { Placeholder("SOS") }
         composable<Screen.ChecklistCategories> { Placeholder("Checklist Categories") }
         composable<Screen.ChecklistList> { entry ->
