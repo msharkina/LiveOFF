@@ -17,6 +17,7 @@ import com.lefesafety.liveoff.ui.screen.checklists.ChecklistCategoriesScreen
 import com.lefesafety.liveoff.ui.screen.checklists.ChecklistDetailScreen
 import com.lefesafety.liveoff.ui.screen.checklists.ChecklistListScreen
 import com.lefesafety.liveoff.ui.screen.home.HomeScreen
+import com.lefesafety.liveoff.ui.screen.favorites.FavoritesScreen
 import com.lefesafety.liveoff.ui.screen.search.SearchScreen
 import com.lefesafety.liveoff.ui.screen.settings.SettingsScreen
 import com.lefesafety.liveoff.ui.screen.sos.SosScreen
@@ -89,7 +90,12 @@ fun LiveOffNavGraph(
         composable<Screen.Search> {
             SearchScreen(onNavigateToCardDetail = { cardId -> navController.navigate(Screen.CardDetail(cardId)) })
         }
-        composable<Screen.Favorites> { Placeholder("Favorites") }
+        composable<Screen.Favorites> {
+            FavoritesScreen(
+                onNavigateToCard = { cardId -> navController.navigate(Screen.CardDetail(cardId)) },
+                onNavigateToChecklist = { checklistId -> navController.navigate(Screen.ChecklistDetail(checklistId)) }
+            )
+        }
         composable<Screen.Settings> { SettingsScreen() }
         composable<Screen.MorseAlphabet> { Placeholder("Morse Alphabet") }
         composable<Screen.MorseTrainer> { Placeholder("Morse Trainer") }
