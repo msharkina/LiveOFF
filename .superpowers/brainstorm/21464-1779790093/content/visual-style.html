@@ -1,0 +1,95 @@
+<h2>Visual Style / Стиль приложения</h2>
+<p class="subtitle">Какой визуальный стиль подходит для LiveOFF?</p>
+
+<div class="cards">
+  <!-- Option A: Military/Tactical -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #1a1a1a; padding: 24px; min-height: 220px;">
+      <div style="font-family: monospace; color: #00ff41; font-size: 13px; margin-bottom: 12px;">// LIVE<span style="color: #ff4444;">OFF</span> v1.0</div>
+      <div style="background: #2a2a2a; border: 1px solid #444; border-radius: 4px; padding: 12px; margin-bottom: 8px;">
+        <div style="color: #ff4444; font-weight: bold; font-size: 14px; letter-spacing: 2px;">SOS</div>
+        <div style="color: #888; font-size: 11px; margin-top: 4px;">EMERGENCY PROTOCOL</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+        <div style="background: #2a2a2a; border: 1px solid #333; border-radius: 4px; padding: 8px; color: #aaa; font-size: 11px; text-align: center;">Огонь</div>
+        <div style="background: #2a2a2a; border: 1px solid #333; border-radius: 4px; padding: 8px; color: #aaa; font-size: 11px; text-align: center;">Вода</div>
+        <div style="background: #2a2a2a; border: 1px solid #333; border-radius: 4px; padding: 8px; color: #aaa; font-size: 11px; text-align: center;">Радиация</div>
+        <div style="background: #2a2a2a; border: 1px solid #333; border-radius: 4px; padding: 8px; color: #aaa; font-size: 11px; text-align: center;">Эвакуация</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. Тактический / Военный</h3>
+      <p>Темный фон, моноширинный шрифт, зеленые/красные акценты. Серьезный, строгий. Ассоциация с военным оборудованием.</p>
+    </div>
+  </div>
+
+  <!-- Option B: Clean/Humanitarian -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #f5f5f0; padding: 24px; min-height: 220px;">
+      <div style="font-family: -apple-system, sans-serif; color: #1a3a5c; font-size: 18px; font-weight: 700; margin-bottom: 12px;">LiveOFF</div>
+      <div style="background: #dc3545; border-radius: 12px; padding: 12px; margin-bottom: 8px; text-align: center;">
+        <div style="color: white; font-weight: bold; font-size: 16px;">SOS</div>
+        <div style="color: rgba(255,255,255,0.8); font-size: 11px; margin-top: 2px;">Экстренная помощь</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+        <div style="background: white; border-radius: 10px; padding: 10px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <div style="font-size: 20px;">&#x1F525;</div>
+          <div style="color: #333; font-size: 11px; margin-top: 4px;">Огонь</div>
+        </div>
+        <div style="background: white; border-radius: 10px; padding: 10px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <div style="font-size: 20px;">&#x1F4A7;</div>
+          <div style="color: #333; font-size: 11px; margin-top: 4px;">Вода</div>
+        </div>
+        <div style="background: white; border-radius: 10px; padding: 10px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <div style="font-size: 20px;">&#x2622;&#xFE0F;</div>
+          <div style="color: #333; font-size: 11px; margin-top: 4px;">Радиация</div>
+        </div>
+        <div style="background: white; border-radius: 10px; padding: 10px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+          <div style="font-size: 20px;">&#x1F6B6;</div>
+          <div style="color: #333; font-size: 11px; margin-top: 4px;">Эвакуация</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. Чистый / Гуманитарный</h3>
+      <p>Светлый фон, округлые формы, иконки-эмодзи. Дружелюбный, не пугающий. Как приложение Красного Креста.</p>
+    </div>
+  </div>
+
+  <!-- Option C: Pragmatic/Orange -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #1e2126; padding: 24px; min-height: 220px;">
+      <div style="font-family: -apple-system, sans-serif; color: #f0f0f0; font-size: 18px; font-weight: 700; margin-bottom: 12px;">Live<span style="color: #ff8c00;">OFF</span></div>
+      <div style="background: linear-gradient(135deg, #cc0000, #ff2200); border-radius: 8px; padding: 12px; margin-bottom: 8px; text-align: center;">
+        <div style="color: white; font-weight: bold; font-size: 16px; letter-spacing: 1px;">SOS</div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
+        <div style="background: #2a2e35; border-radius: 8px; padding: 10px; text-align: center; border-left: 3px solid #ff8c00;">
+          <div style="color: #f0f0f0; font-size: 12px; font-weight: 600;">Огонь</div>
+        </div>
+        <div style="background: #2a2e35; border-radius: 8px; padding: 10px; text-align: center; border-left: 3px solid #3498db;">
+          <div style="color: #f0f0f0; font-size: 12px; font-weight: 600;">Вода</div>
+        </div>
+        <div style="background: #2a2e35; border-radius: 8px; padding: 10px; text-align: center; border-left: 3px solid #e74c3c;">
+          <div style="color: #f0f0f0; font-size: 12px; font-weight: 600;">Радиация</div>
+        </div>
+        <div style="background: #2a2e35; border-radius: 8px; padding: 10px; text-align: center; border-left: 3px solid #2ecc71;">
+          <div style="color: #f0f0f0; font-size: 12px; font-weight: 600;">Эвакуация</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. Прагматичный / Темный</h3>
+      <p>Темный фон, оранжевые/цветные акценты по категориям. Современный, читаемый ночью, экономит батарею на AMOLED. Баланс между серьезностью и удобством.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 24px;">
+  <h3>Учтите:</h3>
+  <ul style="color: #aaa; font-size: 14px;">
+    <li>Темная тема экономит батарею (критично при отключении электричества)</li>
+    <li>Ночной режим предусмотрен в настройках в любом случае</li>
+    <li>Высокий контраст важен для чтения в стрессе</li>
+  </ul>
+</div>

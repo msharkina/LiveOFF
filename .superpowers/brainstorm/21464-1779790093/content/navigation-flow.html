@@ -1,0 +1,164 @@
+<h2>Навигация приложения LiveOFF</h2>
+<p class="subtitle">Схема экранов и переходов между ними</p>
+
+<div class="mockup">
+  <div class="mockup-header">Карта навигации</div>
+  <div class="mockup-body" style="padding: 24px; background: #1e2126;">
+
+    <!-- Home Screen -->
+    <div style="text-align: center; margin-bottom: 32px;">
+      <div style="display: inline-block; background: #2a2e35; border: 2px solid #ff8c00; border-radius: 12px; padding: 16px 32px;">
+        <div style="color: #ff8c00; font-weight: 700; font-size: 16px;">Главный экран</div>
+        <div style="color: #aaa; font-size: 12px; margin-top: 4px;">SOS | Чек-листы | Карточки | Поиск | Избранное</div>
+      </div>
+    </div>
+
+    <!-- Arrows down -->
+    <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 8px;">
+      <div style="color: #555; font-size: 20px;">|</div>
+      <div style="color: #555; font-size: 20px;">|</div>
+      <div style="color: #555; font-size: 20px;">|</div>
+      <div style="color: #555; font-size: 20px;">|</div>
+      <div style="color: #555; font-size: 20px;">|</div>
+    </div>
+
+    <!-- Main screens row -->
+    <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px;">
+
+      <!-- SOS -->
+      <div style="background: linear-gradient(135deg, #cc0000, #ff2200); border-radius: 10px; padding: 12px; width: 130px; text-align: center;">
+        <div style="color: white; font-weight: 700; font-size: 14px;">SOS</div>
+        <div style="color: rgba(255,255,255,0.7); font-size: 10px; margin-top: 6px;">
+          Сигнал<br>Фонарик<br>Эвакуация<br>Контакты<br>Первая помощь<br>Тихий режим
+        </div>
+        <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,0.3);">
+          <div style="color: rgba(255,255,255,0.5); font-size: 9px;">Доступен с ЛЮБОГО экрана<br>(Floating Button)</div>
+        </div>
+      </div>
+
+      <!-- Checklists -->
+      <div style="background: #2a2e35; border-radius: 10px; padding: 12px; width: 130px; text-align: center; border-left: 3px solid #2ecc71;">
+        <div style="color: #2ecc71; font-weight: 700; font-size: 14px;">Чек-листы</div>
+        <div style="color: #aaa; font-size: 10px; margin-top: 6px;">
+          Категории<br>
+          &darr;<br>
+          Список чек-листов<br>
+          &darr;<br>
+          Чек-лист с галочками
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div style="background: #2a2e35; border-radius: 10px; padding: 12px; width: 130px; text-align: center; border-left: 3px solid #ff8c00;">
+        <div style="color: #ff8c00; font-weight: 700; font-size: 14px;">Карточки</div>
+        <div style="color: #aaa; font-size: 10px; margin-top: 6px;">
+          Категории + теги<br>
+          &darr;<br>
+          Список карточек<br>
+          &darr;<br>
+          Краткая + подробная
+        </div>
+      </div>
+
+      <!-- Search -->
+      <div style="background: #2a2e35; border-radius: 10px; padding: 12px; width: 130px; text-align: center; border-left: 3px solid #3498db;">
+        <div style="color: #3498db; font-weight: 700; font-size: 14px;">Поиск</div>
+        <div style="color: #aaa; font-size: 10px; margin-top: 6px;">
+          FTS по всему контенту<br>
+          Фильтры: категория,<br>сложность, офлайн
+        </div>
+      </div>
+
+      <!-- Favorites -->
+      <div style="background: #2a2e35; border-radius: 10px; padding: 12px; width: 130px; text-align: center; border-left: 3px solid #e67e22;">
+        <div style="color: #e67e22; font-weight: 700; font-size: 14px;">Избранное</div>
+        <div style="color: #aaa; font-size: 10px; margin-top: 6px;">
+          Сохранённые<br>карточки<br>+ заметки
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom row -->
+    <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;">
+      <div style="background: #2a2e35; border-radius: 10px; padding: 12px; width: 200px; text-align: center; border-left: 3px solid #9b59b6;">
+        <div style="color: #9b59b6; font-weight: 700; font-size: 14px;">Пакеты контента</div>
+        <div style="color: #aaa; font-size: 10px; margin-top: 6px;">Базовый (встроен) | Региональные (скачать)<br>Прогресс загрузки, размер</div>
+      </div>
+      <div style="background: #2a2e35; border-radius: 10px; padding: 12px; width: 200px; text-align: center; border-left: 3px solid #95a5a6;">
+        <div style="color: #95a5a6; font-weight: 700; font-size: 14px;">Настройки</div>
+        <div style="color: #aaa; font-size: 10px; margin-top: 6px;">Язык | Единицы | Ночной режим<br>Анимации | Автозагрузка | Приватность</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Card detail mockup -->
+<h2 style="margin-top: 32px;">Экран карточки (детальный вид)</h2>
+<p class="subtitle">Краткий режим + разворачиваемая подробная инструкция</p>
+
+<div class="split">
+  <div class="mockup">
+    <div class="mockup-header">Краткий режим (по умолчанию)</div>
+    <div class="mockup-body" style="background: #1e2126; padding: 16px;">
+      <div style="color: #ff8c00; font-size: 11px; font-weight: 600; letter-spacing: 1px;">ОГОНЬ И ТЕПЛО</div>
+      <div style="color: #f0f0f0; font-size: 18px; font-weight: 700; margin: 8px 0;">Как развести костёр</div>
+
+      <div style="display: flex; gap: 12px; margin: 12px 0;">
+        <div style="background: #2a2e35; border-radius: 6px; padding: 6px 10px; color: #aaa; font-size: 11px;">5 мин</div>
+        <div style="background: #2a2e35; border-radius: 6px; padding: 6px 10px; color: #2ecc71; font-size: 11px;">Легко</div>
+        <div style="background: #2a2e35; border-radius: 6px; padding: 6px 10px; color: #aaa; font-size: 11px;">Спички</div>
+      </div>
+
+      <div style="border-left: 3px solid #ff8c00; padding-left: 12px; margin: 16px 0;">
+        <div style="color: #f0f0f0; font-size: 13px; margin-bottom: 8px;"><span style="color: #ff8c00; font-weight: 700;">1.</span> Подготовьте площадку</div>
+        <div style="color: #f0f0f0; font-size: 13px; margin-bottom: 8px;"><span style="color: #ff8c00; font-weight: 700;">2.</span> Соберите топливо: трут, щепки, поленья</div>
+        <div style="color: #f0f0f0; font-size: 13px; margin-bottom: 8px;"><span style="color: #ff8c00; font-weight: 700;">3.</span> Зажгите трут, подложите щепки</div>
+        <div style="color: #f0f0f0; font-size: 13px;"><span style="color: #ff8c00; font-weight: 700;">4.</span> Постепенно увеличивайте топливо</div>
+      </div>
+
+      <div style="background: #2a2e35; border-radius: 8px; padding: 12px; margin-top: 12px; text-align: center; color: #3498db; font-size: 13px; cursor: pointer;">
+        Подробная инструкция &#x25BC;
+      </div>
+
+      <div style="display: flex; gap: 8px; margin-top: 16px;">
+        <div style="flex:1; background: #2a2e35; border-radius: 8px; padding: 10px; text-align: center; color: #e67e22; font-size: 12px;">&#x2606; В избранное</div>
+        <div style="flex:1; background: #2a2e35; border-radius: 8px; padding: 10px; text-align: center; color: #2ecc71; font-size: 12px;">&#x2713; Прочитано</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="mockup-header">SOS-экран</div>
+    <div class="mockup-body" style="background: #1a0000; padding: 16px;">
+      <div style="text-align: center; color: #ff2200; font-size: 24px; font-weight: 800; margin-bottom: 16px; letter-spacing: 2px;">SOS</div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+        <div style="background: linear-gradient(135deg, #cc0000, #ff2200); border-radius: 12px; padding: 16px; text-align: center;">
+          <div style="font-size: 24px;">&#x1F4E2;</div>
+          <div style="color: white; font-size: 12px; font-weight: 600; margin-top: 6px;">Сигнал</div>
+        </div>
+        <div style="background: #2a2e35; border: 1px solid #444; border-radius: 12px; padding: 16px; text-align: center;">
+          <div style="font-size: 24px;">&#x1F526;</div>
+          <div style="color: #f0f0f0; font-size: 12px; font-weight: 600; margin-top: 6px;">Фонарик</div>
+        </div>
+        <div style="background: #2a2e35; border: 1px solid #444; border-radius: 12px; padding: 16px; text-align: center;">
+          <div style="font-size: 24px;">&#x1F4CB;</div>
+          <div style="color: #f0f0f0; font-size: 12px; font-weight: 600; margin-top: 6px;">Эвакуация</div>
+        </div>
+        <div style="background: #2a2e35; border: 1px solid #444; border-radius: 12px; padding: 16px; text-align: center;">
+          <div style="font-size: 24px;">&#x1F4DE;</div>
+          <div style="color: #f0f0f0; font-size: 12px; font-weight: 600; margin-top: 6px;">Контакты</div>
+        </div>
+        <div style="background: #2a2e35; border: 1px solid #444; border-radius: 12px; padding: 16px; text-align: center;">
+          <div style="font-size: 24px;">&#x1FA79;</div>
+          <div style="color: #f0f0f0; font-size: 12px; font-weight: 600; margin-top: 6px;">Первая помощь</div>
+        </div>
+        <div style="background: #2a2e35; border: 1px solid #333; border-radius: 12px; padding: 16px; text-align: center;">
+          <div style="font-size: 24px;">&#x1F910;</div>
+          <div style="color: #888; font-size: 12px; font-weight: 600; margin-top: 6px;">Тихий режим</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+{"type":"server-started","port":55713,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:55713","screen_dir":"/Users/mariasharkina/AndroidStudioProjects/LiveOFF/.superpowers/brainstorm/21464-1779790093/content","state_dir":"/Users/mariasharkina/AndroidStudioProjects/LiveOFF/.superpowers/brainstorm/21464-1779790093/state"}
+{"type":"screen-added","file":"/Users/mariasharkina/AndroidStudioProjects/LiveOFF/.superpowers/brainstorm/21464-1779790093/content/visual-style.html"}
+{"source":"user-event","type":"click","text":"LiveOFF\n      \n        SOS\n      \n      \n        \n          Огонь\n        \n        \n          Вода\n        \n        \n          Радиация\n        \n        \n          Эвакуация\n        \n      \n    \n    \n      C. Прагматичный / Темный\n      Темный фон, оранжевые/цветные акценты по категориям. Современный, читаемый ночью, экономит батарею на AMOLED. Баланс между серьезностью и удобством.","choice":"c","id":null,"timestamp":1779790657485}
+{"type":"screen-added","file":"/Users/mariasharkina/AndroidStudioProjects/LiveOFF/.superpowers/brainstorm/21464-1779790093/content/navigation-flow.html"}
+{"type":"screen-added","file":"/Users/mariasharkina/AndroidStudioProjects/LiveOFF/.superpowers/brainstorm/21464-1779790093/content/waiting.html"}
+{"type":"server-stopped","reason":"idle timeout"}
