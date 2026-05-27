@@ -18,6 +18,9 @@ import com.lefesafety.liveoff.ui.screen.checklists.ChecklistDetailScreen
 import com.lefesafety.liveoff.ui.screen.checklists.ChecklistListScreen
 import com.lefesafety.liveoff.ui.screen.home.HomeScreen
 import com.lefesafety.liveoff.ui.screen.favorites.FavoritesScreen
+import com.lefesafety.liveoff.ui.screen.morse.MorseAlphabetScreen
+import com.lefesafety.liveoff.ui.screen.morse.MorseTrainerScreen
+import com.lefesafety.liveoff.ui.screen.morse.MorseTransmitScreen
 import com.lefesafety.liveoff.ui.screen.search.SearchScreen
 import com.lefesafety.liveoff.ui.screen.settings.SettingsScreen
 import com.lefesafety.liveoff.ui.screen.sos.SosScreen
@@ -97,9 +100,14 @@ fun LiveOffNavGraph(
             )
         }
         composable<Screen.Settings> { SettingsScreen() }
-        composable<Screen.MorseAlphabet> { Placeholder("Morse Alphabet") }
-        composable<Screen.MorseTrainer> { Placeholder("Morse Trainer") }
-        composable<Screen.MorseTransmit> { Placeholder("Morse Transmit") }
+        composable<Screen.MorseAlphabet> {
+            MorseAlphabetScreen(
+                onNavigateToTrainer = { navController.navigate(Screen.MorseTrainer) },
+                onNavigateToTransmit = { navController.navigate(Screen.MorseTransmit) }
+            )
+        }
+        composable<Screen.MorseTrainer> { MorseTrainerScreen() }
+        composable<Screen.MorseTransmit> { MorseTransmitScreen() }
     }
 }
 
