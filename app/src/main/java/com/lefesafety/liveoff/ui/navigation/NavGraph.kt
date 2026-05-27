@@ -10,7 +10,15 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.toRoute
+import com.lefesafety.liveoff.ui.screen.cards.CardCategoriesScreen
+import com.lefesafety.liveoff.ui.screen.cards.CardDetailScreen
+import com.lefesafety.liveoff.ui.screen.cards.CardListScreen
+import com.lefesafety.liveoff.ui.screen.checklists.ChecklistCategoriesScreen
+import com.lefesafety.liveoff.ui.screen.checklists.ChecklistDetailScreen
+import com.lefesafety.liveoff.ui.screen.checklists.ChecklistListScreen
 import com.lefesafety.liveoff.ui.screen.home.HomeScreen
+import com.lefesafety.liveoff.ui.screen.search.SearchScreen
+import com.lefesafety.liveoff.ui.screen.sos.SosScreen
 
 @Composable
 fun LiveOffNavGraph(
@@ -33,26 +41,53 @@ fun LiveOffNavGraph(
                 onNavigateToSettings = { navController.navigate(Screen.Settings) }
             )
         }
-        composable<Screen.Sos> { Placeholder("SOS") }
-        composable<Screen.ChecklistCategories> { Placeholder("Checklist Categories") }
-        composable<Screen.ChecklistList> { entry ->
-            val route = entry.toRoute<Screen.ChecklistList>()
-            Placeholder("Checklists: ${route.categoryId}")
+        composable<Screen.Sos> {
+            SosScreen(
+                onNavigateToEvacuation = { navController.navigate(Screen.ChecklistList("evacuation")) },
+                onNavigateToFirstAid = { navController.navigate(Screen.CardList("firstaid")) },
+                onBack = { navController.popBackStack() }
+            )
         }
-        composable<Screen.ChecklistDetail> { entry ->
-            val route = entry.toRoute<Screen.ChecklistDetail>()
-            Placeholder("Checklist: ${route.checklistId}")
+        composable<Screen.ChecklistCategories> {
+            ChecklistCategoriesScreen(
+                onNavigateToChecklistList = { categoryId ->
+                    navController.navigate(Screen.ChecklistList(categoryId))
+                }
+            )
         }
-        composable<Screen.CardCategories> { Placeholder("Card Categories") }
-        composable<Screen.CardList> { entry ->
-            val route = entry.toRoute<Screen.CardList>()
-            Placeholder("Cards: ${route.categoryId}")
+        composable<Screen.ChecklistList> {
+            ChecklistListScreen(
+                onNavigateToChecklistDetail = { checklistId ->
+                    navController.navigate(Screen.ChecklistDetail(checklistId))
+                }
+            )
         }
-        composable<Screen.CardDetail> { entry ->
-            val route = entry.toRoute<Screen.CardDetail>()
-            Placeholder("Card: ${route.cardId}")
+        composable<Screen.ChecklistDetail> {
+            ChecklistDetailScreen()
         }
-        composable<Screen.Search> { Placeholder("Search") }
+        composable<Screen.CardCategories> {
+            CardCategoriesScreen(
+                onNavigateToCardList = { categoryId ->
+                    navController.navigate(Screen.CardList(categoryId))
+                }
+            )
+        }
+        composable<Screen.CardList> {
+            CardListScreen(
+                onNavigateToCardDetail = { cardId ->
+                    navController.navigate(Screen.CardDetail(cardId))
+                },
+                onBack = { navController.popBackStack() }
+            )
+        }
+        composable<Screen.CardDetail> {
+            CardDetailScreen(
+                onBack = { navController.popBackStack() }
+            )
+        }
+        composable<Screen.Search> {
+            SearchScreen(onNavigateToCardDetail = { cardId -> navController.navigate(Screen.CardDetail(cardId)) })
+        }
         composable<Screen.Favorites> { Placeholder("Favorites") }
         composable<Screen.Settings> { Placeholder("Settings") }
         composable<Screen.MorseAlphabet> { Placeholder("Morse Alphabet") }
