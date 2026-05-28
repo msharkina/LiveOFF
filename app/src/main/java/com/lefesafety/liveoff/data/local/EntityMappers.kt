@@ -38,7 +38,7 @@ fun CardEntity.toDomain() = Card(
 
 fun ChecklistEntity.toDomain(): Checklist {
     @Serializable
-    data class ItemDto(val text: String, val sortOrder: Int)
+    data class ItemDto(val text: String, val sortOrder: Int = 0)
     val itemDtos = json.decodeFromString<List<ItemDto>>(items)
     return Checklist(
         id = id, categoryId = categoryId, title = title,

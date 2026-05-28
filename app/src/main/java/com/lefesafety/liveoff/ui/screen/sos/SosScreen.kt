@@ -21,7 +21,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Assignment
 import androidx.compose.material.icons.filled.Bedtime
 import androidx.compose.material.icons.filled.Contacts
-import androidx.compose.material.icons.filled.Flashlight
+import androidx.compose.material.icons.filled.FlashlightOn
 import androidx.compose.material.icons.filled.LocalHospital
 import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.material3.Card
@@ -116,7 +116,7 @@ fun SosScreen(
             // 2. Flashlight
             item {
                 SosActionButton(
-                    icon = Icons.Default.Flashlight,
+                    icon = Icons.Default.FlashlightOn,
                     label = "Фонарик",
                     isActive = uiState.isFlashlightOn,
                     onClick = { viewModel.toggleFlashlight() }

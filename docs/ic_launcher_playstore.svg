@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 108 108">
+  <!-- Background -->
+  <rect width="108" height="108" fill="#E65100"/>
+
+  <!-- Two mountain peaks -->
+  <path d="M18,82 L44,38 L56,54 L70,44 L90,82 Z" fill="#FFFFFF"/>
+
+  <!-- Signal wave 1 (inner) -->
+  <path d="M39,34 Q44,27 49,34" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Signal wave 2 (middle) -->
+  <path d="M35,30 Q44,21 53,30" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Signal wave 3 (outer) -->
+  <path d="M31,26 Q44,15 57,26" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

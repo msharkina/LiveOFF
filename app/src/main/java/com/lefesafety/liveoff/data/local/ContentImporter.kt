@@ -59,11 +59,14 @@ class ContentImporter @Inject constructor(
         })
 
         checklistDao.insertAll(pkg.checklists.map { cl ->
+            val indexedItems = cl.items.mapIndexed { index, item ->
+                item.copy(sortOrder = index)
+            }
             ChecklistEntity(
                 id = cl.id,
                 categoryId = cl.categoryId,
                 title = cl.title,
-                items = json.encodeToString(cl.items)
+                items = json.encodeToString(indexedItems)
             )
         })
     }

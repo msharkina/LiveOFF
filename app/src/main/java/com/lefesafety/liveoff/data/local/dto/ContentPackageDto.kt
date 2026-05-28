@@ -1,5 +1,6 @@
 package com.lefesafety.liveoff.data.local.dto
 
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -14,7 +15,7 @@ data class ContentPackageDto(
 @Serializable
 data class CategoryDto(
     val id: String,
-    val name: String,
+    @SerialName("title") val name: String,
     val icon: String,
     val accentColor: String,
     val sortOrder: Int
@@ -38,7 +39,7 @@ data class CardDto(
 @Serializable
 data class ChecklistItemDto(
     val text: String,
-    val sortOrder: Int
+    val sortOrder: Int = 0
 )
 
 @Serializable
